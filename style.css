@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    background-color: hsla(0, 0%, 0%, 0.808);
+    text-align: center;
+}
+
+nav h1{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.contain{
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.87);
+    text-align: center;
+    padding-top: 15px;
+}
+.contain h1{
+    font-size: 30px;
+}
+.list{
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 40px;
+    padding: 60px 30px 40px 30px;
+}
+
+.movies{
+    background-color: #1e1d2781;
+    text-transform: uppercase;
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.movies .image{
+    width: auto;
+    height: auto;
+}
+
+.image  img{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.movies a{
+    text-decoration: none;
+    text-align: center;
+}
+.movies h1{
+    font-size: 17px;
+    margin:10px;
+}
+.movies p{
+    font-size: 12px;
+    margin:10px;
+}
+.endbar{
+    background-color: hsla(0, 0%, 0%, 0.808);
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.link ul li{
+    list-style: none;
+    display: block;
+}
+.link li{
+    margin: 30px;
+}
+.link h1{
+    font-size: 32px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+.endbar p{
+    padding: 25px;
+}
+
+
+@media (max-width: 390px){
+    .list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+        gap: 20px;
+        padding: 60px 30px 40px 30px;
+    }
+    .movies h1{
+        font-size: 14px;
+        padding: 1px 1px 0px 1px;
+        margin: 10px;
+    }
+    .movies p{
+        font-size: 12px;
+        margin:5px;
+    }
+    .list{
+
+        padding: 30px 30px 40px 30px;
+    }
+}
